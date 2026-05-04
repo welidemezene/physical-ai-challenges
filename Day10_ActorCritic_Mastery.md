@@ -14,7 +14,7 @@ If it got `+10`, it did that action more often.
 **The Problem:** What if the robot got `+10` just because the coffee cherry happened to blow into its hand due to wind? The robot didn't do anything smart; it just got lucky. 
 If the robot blindly updates its weights based on luck, the math gets chaotic. The gradients "vibrate" wildly (this is called High Variance). The robot will learn for 5 minutes, then suddenly "forget" how to walk and collapse.
 
-### Mastery Concept 2: The Critic & The "Advantage"
+### Mastery Concept 2: The Critic & The "Advantage"/
 To fix the Noise Problem, we invented the **Critic**. 
 The Critic's only job is to look at the current State and predict the future: *"I have seen this situation before. I expect we will get +5 points from here."*
 
