@@ -80,7 +80,7 @@ print(f"  Sideways Force (Fx): {Fx[0].item():.2f} N")
 print(f"  Result:              {'SLIPPED (Penalty -10)' if slip_mask[0].item() else 'GRIP HELD (No Penalty)'}")
 print("========================================================\n")
 
-# --- THE C++ CHALLENGE (Mental Note) ---
-# In Python/PyTorch, we do this matrix calculation in 2ms.
+# --- THE C++ CHALLENGE (Mental Note for A2SV) ---
+# In Python/PyTorch, we do this matrix calculation in ~2ms on GPU.
 # In C++ for A2SV, you will have to manually manage the memory for 1D line intersections.
 # Understanding the pure math here makes writing the low-level C++ drastically easier.
