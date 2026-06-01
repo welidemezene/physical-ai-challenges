@@ -49,3 +49,5 @@ If a Robotics Lead asks you: *"Why do we use parallel broad-phase and narrow-pha
 
 **Your Answer:**
 > *"Checking every triangle of a robot against every triangle of the environment is an O(N²) nightmare. We use Broad-phase algorithms like AABB Trees or Sweep-and-Prune to quickly discard objects that are far apart. We only run the mathematically brutal Narrow-phase constraints (LCP Solvers) on the geometries that are actively colliding. By parallelizing this across 16,384 CUDA cores on the RTX 4090, we can resolve millions of contact manifolds in real-time."*
+
+*Note: Mastering these concepts is what separates a standard software engineer from a true Physical AI Architect.*
