@@ -21,6 +21,10 @@ def check_for_slip(Fz, Fx, mu=0.6):
     Returns:
         slip_mask (Tensor): A boolean mask where True = robot slipped.
         penalties (Tensor): Reward penalties to apply to the policy.
+        
+    Note (Energy Leakage): 
+    If we don't resolve these forces correctly using constraints, the physics engine
+    can suffer from 'Energy Leakage', causing the robot to vibrate and eventually explode.
     """
     # 1. The Coulomb Friction Cone Limit
     # How much horizontal force can the ground support before breaking traction?
