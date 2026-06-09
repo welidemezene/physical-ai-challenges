@@ -28,6 +28,7 @@ def check_for_slip(Fz, Fx, mu=0.6):
     """
     # 1. The Coulomb Friction Cone Limit
     # How much horizontal force can the ground support before breaking traction?
+    # This is determined by the Normal Force (Fz) and the coefficient of friction (mu).
     max_grip_force = mu * Fz
     
     # 2. Check if the robot's sideways force exceeds the grip limit
