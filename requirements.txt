@@ -1,0 +1,24 @@
+# Core dependencies for the daily scripts (Days 1-17).
+#
+# Install PyTorch first, matched to your CUDA version, from:
+#   https://pytorch.org/get-started/locally/
+# The plain `torch` pin below resolves to the default CPU/CUDA wheel, which is
+# fine for the Day 1-17 scripts but not for GPU simulation.
+
+torch>=2.0
+numpy>=1.24
+
+# OpenUSD Python bindings — provides the `pxr` module used in day5_usd_script.py
+usd-core>=23.11
+
+# Plotting for training-curve analysis
+matplotlib>=3.7
+
+# Note: the Gymnasium API is implemented by hand in day11_gymnasium_loop.py and
+# day15_gymnasium_interface.py rather than imported, so `gymnasium` is not a
+# hard requirement for the daily scripts. Install it if you want to compare
+# against the reference implementation:
+#   pip install gymnasium
+#
+# NVIDIA Isaac Lab is installed separately (Docker or source) and is not
+# pip-installable from this file. See the Isaac Lab docs for setup.
