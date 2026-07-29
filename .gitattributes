@@ -1,0 +1,13 @@
+# Normalize line endings: store text as LF in the repo and check it out as LF
+# on every platform. This silences the "LF will be replaced by CRLF" warnings
+# on Windows and keeps diffs clean across contributors.
+* text=auto eol=lf
+
+# Binary assets Git should never try to normalize or diff as text.
+*.glb  binary
+*.png  binary
+*.jpg  binary
+*.pt   binary
+*.pth  binary
+*.ckpt binary
+*.usd  binary
