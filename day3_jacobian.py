@@ -1,3 +1,11 @@
+"""Day 3 — The Jacobian.
+
+Assemble the 2x2 Jacobian of the 2-link arm from the partial derivatives of
+end-effector (X, Y) with respect to the joint angles, batched across a million
+robots. The Jacobian is the local map from joint velocities to tip velocity;
+inverting it is what turns a desired hand motion into joint commands.
+"""
+
 import numpy as np
 import time
 

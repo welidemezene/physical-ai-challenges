@@ -1,3 +1,11 @@
+"""Day 2 — SE(3) kinematic chain.
+
+Chain two revolute joints (shoulder + elbow) by multiplying their 4x4
+homogeneous transforms, batched across a million 2-link robots. Composing
+T1 @ T2 is forward kinematics: it carries the base frame out to the end
+effector, which is the foundation the Jacobian builds on in Day 3.
+"""
+
 import numpy as np
 import time
 

@@ -1,3 +1,11 @@
+"""Day 1 — Batch kinematics engine.
+
+Build an SE(3) rotation and apply it to one million 3D points at once with a
+single vectorized matrix multiply, instead of looping point by point. The
+lesson is throughput: the same rotation Three.js hides inside
+`object.rotation` is written here in raw NumPy and run across a whole batch.
+"""
+
 import numpy as np
 import time
 
