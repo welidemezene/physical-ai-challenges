@@ -1,3 +1,13 @@
+"""Day 4 — Differentiable physics.
+
+Treat a bounce simulation as a differentiable function and let autograd solve
+for the physical parameter that hits a target. A ball is dropped from a fixed
+height with an unknown `bounciness`; `requires_grad=True` tracks the sim so
+`loss.backward()` gives the gradient of final height w.r.t. bounciness, and
+SGD tunes it until the ball bounces to exactly the target height. Same
+gradient-descent loop as training a network, but the "model" is physics.
+"""
+
 import torch
 import time
 

@@ -1,3 +1,12 @@
+"""Day 5 — OpenUSD scene architecture.
+
+Author a USD stage from scratch and build a robot as a hierarchy of Xform
+prims under `/World`, with the Z-up axis convention Isaac Lab expects. USD is
+the scene-description layer the later simulation days load from; this script
+is about the composition tree — stages, prims, and transforms — rather than
+any dynamics.
+"""
+
 from pxr import Usd, UsdGeom
 import os
 
