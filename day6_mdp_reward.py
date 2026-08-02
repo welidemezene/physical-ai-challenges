@@ -1,3 +1,12 @@
+"""Day 6 — MDP state and reward shaping.
+
+Frame a manipulation task (a robot reaching for a coffee cherry) as a Markov
+Decision Process: a state snapshot (distance, force, energy) and a shaped
+reward. The point is why a sparse reward that only pays out at distance == 0
+never trains, and how a dense, shaped reward gives the agent a gradient to
+follow at every step.
+"""
+
 import numpy as np
 
 print("\n========================================================")

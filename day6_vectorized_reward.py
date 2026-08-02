@@ -1,3 +1,12 @@
+"""Day 6 (vectorized) — reward shaping across a million agents.
+
+The same shaped reward as day6_mdp_reward.py, but computed as tensor
+operations over a million agents at once: a progress term (did distance
+shrink since the previous step?) minus an effort penalty on applied torque.
+Shows how per-agent reward logic becomes branch-free batched math for GPU
+training.
+"""
+
 import torch
 import time
 
