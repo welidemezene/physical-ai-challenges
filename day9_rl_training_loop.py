@@ -1,3 +1,12 @@
+"""Day 9 (training loop) — the RL cycle end to end.
+
+Wire mock versions of the previous days into the canonical loop: observe
+(Day 7), act (Day 8), step physics and collect reward (Days 4 and 6), learn
+(Day 9). Every RL framework, Isaac Lab included, is this same
+observe-act-reward-update cycle run thousands of times per second; here it
+is slowed down and printed so each turn of the wheel is visible.
+"""
+
 import time
 
 print("\n========================================================")

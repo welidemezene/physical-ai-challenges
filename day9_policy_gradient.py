@@ -1,3 +1,12 @@
+"""Day 9 — Policy gradient loss.
+
+Compute the REINFORCE loss on a batch of experience: -(log_prob * reward)
+pushes the network toward confident actions that scored well and away from
+ones that failed, while a small entropy bonus pays the agent to keep
+exploring instead of settling early. Calling loss.backward() is the moment
+the reward signal becomes gradients on the Day 8 weights.
+"""
+
 import torch
 
 print("\n========================================================")

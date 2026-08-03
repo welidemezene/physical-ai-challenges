@@ -1,3 +1,12 @@
+"""Day 8 — Neural policy.
+
+Build the policy network: a three-layer MLP mapping 14 sensor readings
+(7 joint angles + 7 joint velocities) to 7 motor torques, then push a batch
+of robots through it in one forward pass. This is the brain the later days
+train — sensors in, torques out — with shape checks proving the batch
+dimension flows through intact.
+"""
+
 import torch
 import torch.nn as nn
 import time

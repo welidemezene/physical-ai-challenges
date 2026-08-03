@@ -1,3 +1,12 @@
+"""Day 7 — Observation filtering.
+
+Turn raw sensor readings for a million robots into a clean observation
+tensor: normalize angles from [-pi, pi] to [-1, 1], clamp velocity spikes to
+[-5, 5], and reduce global positions to hand-to-target distance. The point is
+that the network never sees raw reality — it sees a filtered, normalized
+snapshot stacked into one (N, 3) tensor per step.
+"""
+
 import torch
 import time
 
