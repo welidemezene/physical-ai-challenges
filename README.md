@@ -107,7 +107,9 @@ python day14_ppo_clipped.py
 
 ## Status
 
-Days 1–17 complete. The next phase moves from hand-built components to full GPU
-simulation — training a Franka arm on a manipulation task in Isaac Lab and reading the
-results back from the training logs. The day-by-day plan for that phase, with a
-definition of done for each day, lives in [`ROADMAP.md`](ROADMAP.md).
+Days 1–17 complete. Phase 2 — full GPU simulation, training a Franka arm on a
+manipulation task in Isaac Lab — is underway in the sibling repo
+[grasping-twin](https://github.com/welidemezene/grasping-twin), where a lift policy has
+been trained through a nine-stage curriculum and the current frontier is making the
+gripper truly grasp rather than bat the cube. The day-by-day plan for recording that
+phase here, with a definition of done for each day, lives in [`ROADMAP.md`](ROADMAP.md).
