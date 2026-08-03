@@ -1,3 +1,12 @@
+"""Day 11 — Vectorized environment loop.
+
+Implement the Gymnasium reset()/step() heartbeat for a million pendulums as
+pure tensor math: semi-implicit physics, a dense reward, done flags, and —
+the key trick — partial resets that re-initialize only the robots that died
+while the survivors keep stepping. Benchmarks the loop in frames per second,
+the metric GPU simulators live by.
+"""
+
 import torch
 import time
 

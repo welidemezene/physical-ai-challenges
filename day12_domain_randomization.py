@@ -1,3 +1,12 @@
+"""Day 12 — Domain randomization.
+
+Inject scaled Gaussian noise into a million perfect observations to imitate
+real sensors — dust, drift, glitches — so the policy trains against the
+chaos it will meet outside the simulator. A policy that only ever saw clean
+simulator state overfits to a world that doesn't exist; noise is what makes
+it anti-fragile at deployment.
+"""
+
 import torch
 import time
 

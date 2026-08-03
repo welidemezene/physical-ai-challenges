@@ -1,3 +1,12 @@
+"""Day 10 — Actor-Critic architecture.
+
+Build the dual-headed network: a shared trunk feeds an actor head that
+outputs 7 torques and a critic head that outputs one scalar — the expected
+future reward of the current state. The critic's estimate becomes the
+baseline subtracted from actual returns to form the advantage, so the actor
+is graded against expectation instead of raw luck.
+"""
+
 import torch
 import torch.nn as nn
 import time

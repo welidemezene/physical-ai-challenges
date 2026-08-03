@@ -1,3 +1,11 @@
+"""Day 13 — Temporal observation stacking.
+
+Give the agent short-term memory: a rolling buffer keeps the last 5
+observation frames per robot and flattens (N, 5, 14) into the (N, 70) tensor
+an MLP can read. A single frame cannot show motion — stacking history is how
+a feed-forward network perceives velocity, direction, and change.
+"""
+
 import torch
 import time
 
