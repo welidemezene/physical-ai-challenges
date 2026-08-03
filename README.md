@@ -109,4 +109,5 @@ python day14_ppo_clipped.py
 
 Days 1–17 complete. The next phase moves from hand-built components to full GPU
 simulation — training a Franka arm on a manipulation task in Isaac Lab and reading the
-results back from the training logs.
+results back from the training logs. The day-by-day plan for that phase, with a
+definition of done for each day, lives in [`ROADMAP.md`](ROADMAP.md).
