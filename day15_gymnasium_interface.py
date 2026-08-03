@@ -1,3 +1,13 @@
+"""Day 15 — Gymnasium API integration.
+
+Assemble the previous days into one professional environment class: action
+and observation spaces, reset() with randomized targets, and a step() that
+runs physics, shaped reward, sensor noise, termination flags, and Day 11
+partial resets in a single pass. The interface is the point — the brain
+talks reset()/step() and never touches the physics directly, which is what
+lets the same PPO code drive any simulator.
+"""
+
 import torch
 import time
 

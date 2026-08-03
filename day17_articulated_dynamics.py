@@ -1,3 +1,13 @@
+"""Day 17 — Articulated body dynamics.
+
+Step a million 6-joint arms through the equation of motion
+M(q) * q_ddot = tau - C - g: build a simplified diagonal mass matrix from
+cumulative link inertia, solve forward dynamics for joint accelerations, and
+integrate with semi-implicit Euler. A miniature of Featherstone's ABA, the
+O(N) algorithm that lets Isaac Lab step thousands of articulated robots per
+GPU tick.
+"""
+
 import torch
 import time
 

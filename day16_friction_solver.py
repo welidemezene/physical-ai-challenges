@@ -1,3 +1,12 @@
+"""Day 16 — Contact dynamics and the friction cone.
+
+Solve the Coulomb friction constraint for a million contacts at once: a foot
+grips while the tangential force stays inside mu * Fz and slips once it
+leaves the cone, earning a penalty that teaches the policy stable gaits.
+Contact is where simulation gets hard — constraint forces left unresolved
+leak energy until the robot vibrates apart.
+"""
+
 import torch
 import time
 

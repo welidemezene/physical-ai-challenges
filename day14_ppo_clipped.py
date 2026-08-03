@@ -1,3 +1,13 @@
+"""Day 14 — PPO clipped objective.
+
+Compute the PPO loss for a million agents: the probability ratio between new
+and old policies scales the advantage, and torch.clamp confines that ratio
+to [1-eps, 1+eps] so no single update can drag the policy unrecognizably
+far. Taking the min of the raw and clipped terms keeps the greedy version
+only when it is safe, and the clip-rate diagnostic (healthy is roughly
+5-20%) tells you whether learning is stalled or unstable.
+"""
+
 import torch
 import torch.nn as nn
 import time
